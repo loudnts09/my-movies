@@ -18,9 +18,8 @@ To search a movie, type the name of the movie in the search field.
 
 ## Dependencies
 
-This project uses the Bootstrap Icons library for icons and the Notie library for notifications.
+This project uses the [Bootstrap Icons](https://icons.getbootstrap.com/) library for icons and the [Notie](https://github.com/jaredreich/notie) library for notifications.
 
-The API used for the movies is [OMDB](https://www.omdbapi.com/)
-This project uses the [Bootstrap Icons](https://icons.getbootstrap.com/) library for icons and the <a href="https://jaredreich.com/notie/" target="_blank">Notie</a>. library for notifications.
+The API used for the movies is [OMDB](https://www.omdbapi.com/).
 
-In the file keyOmdb.js, it's necessary to log in to omdb to search movies.
+You need to log in to the Omdb site and add the key to the keyOmdb.js file to search for movies.
