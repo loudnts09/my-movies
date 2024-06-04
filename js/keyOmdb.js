@@ -1,1 +1,1 @@
-const key = "8d55c098";
+const key = "chave-da-api-omdb";
