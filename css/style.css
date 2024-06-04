@@ -1,0 +1,108 @@
+:root {
+    --primary--color: rgb(39, 31, 31);
+    --light--primary: #D7F7CA;
+    --lightest-color: #72A1E5;
+    --secondary-color: #76B041;
+    --light-secondary: #CCFF66;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    color: var(--primary--color);
+    background-color: var(--secondary-color);
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--light--primary);
+    flex-grow: 1;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.campo-input-nome > input, .campo-input-ano > input{
+    min-width: 10px;
+    border-radius: 8px;
+    padding: 0.2rem;
+    font-weight: bold;
+}
+
+.campo-input-ano {
+    position: relative;
+    left: 7%;
+}
+
+.campo-input-ano > input {
+    max-width: 3rem;
+}
+
+.campo-input-nome > label, .campo-input-ano > label {
+    font-weight: bold;
+}
+
+#search-button {
+    padding: 0.3rem;
+    border: 1px solid var(-light-secondary);
+    border-radius: 10px;
+    position: relative;
+    left: 30%;
+}
+
+#search-button:focus, #search-button:hover {
+    background-color: var(--light-secondary);
+}
+
+#movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+#movie-list article > img {
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+#movie-list article {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.remove-button {
+    border: 2px solid var(--secondary-color);
+    padding: 0.5rem 0;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px black;
+}
+
+.remove-button:focus, .remove-button:hover {
+    background-color: rgb(193, 70, 70);
+}
+

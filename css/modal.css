@@ -1,0 +1,94 @@
+:root {
+    --primary--color: rgb(39, 31, 31);
+    --light--primary: #D7F7CA;
+    --lightest-color: #72A1E5;
+    --secondary-color: #76B041;
+    --light-secondary: #CCFF66;
+}
+
+#modal-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.overlay{
+    visibility: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal-background {
+    background-color: var(--lightest-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+#modal-container {
+    z-index: 1;
+    background-color: var(--light--primary);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
+
+#movie-title {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+#modal-body {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+button {
+    all:unset;
+    cursor: pointer;
+}
+
+#movie-poster {
+    border-radius: 10px;
+}
+
+#movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+#add-to-list {
+    border: 2px solid var(--lightest-color);
+    padding: 0.5rem 0;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px black;
+}
+
+#add-to-list:focus, #add-to-list:hover {
+    background-color: var(--light-secondary);
+}
+
+#movie-info h3 {
+    border-bottom: 2px solid var(--secondary-color);    
+}

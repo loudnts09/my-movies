@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./src/dist/notie.min.css">
+</head>
+<body>
+    <header>
+            <h2><i class="bi bi-film"></i>Meus Filmes</h2>
+            <section id="search-container">
+                <div class="campo-input-nome">
+                    <label for="movie-name">Nome:</label>
+                    <input type="text" id="movie-name">
+                </div>
+                <div class="campo-input-ano">
+                    <label for="movie-year">Ano:</label>
+                    <input type="text" id="movie-year">
+                    <button id="search-button"><i class="bi bi-search"></i></button>
+                </div>
+            </section>
+    </header>
+    <main>
+        <h2>Comece agora a sua lista de filmes!</h2>
+        <section id="movie-list"></section>
+        <article id="modal-overlay" class="overlay">
+            <section id="modal-background"></section>
+            <section id="modal-container">
+            </section>
+        </article>
+    </main>
+    <script src="./js/keyOmdb.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./src/dist/notie.min.js"></script>
+</body>
+</html>
